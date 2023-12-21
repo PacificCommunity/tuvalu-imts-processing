@@ -16,6 +16,10 @@ import <- read_excel("data/imports_Q3_2023.xlsx")
 export <- read_excel("data/Exports_Q3_2023.xlsx")
 country <- read.csv("other/country.csv")
 hsClass <- read.csv("other/importClassification.csv")
+mode <- read_excel("other/classifications.xlsx", sheet = "mod")
+procedure <- read_excel("other/classifications.xlsx", sheet = "procedure")
+
+
 
 #Reformatting HS2 column into having a width of 2 digit
 width <- 2
@@ -77,3 +81,6 @@ final_data <- final_data[, columnOrder]
 
 # Write final data to csv file
 write.csv(final_data, "output/tivalue_imts_14_tables.csv", row.names = FALSE)
+
+
+
