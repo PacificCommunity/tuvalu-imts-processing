@@ -11,7 +11,7 @@ repository <- file.path(dirname(rstudioapi::getSourceEditorContext()$path))
 setwd(repository)
 
 # Load the import excel file into the R working environment
-import <- read_excel("data/imports_Q3_2023.xlsx")
+import <- read_excel("data/Imports_Q3_2023.xlsx")
 export <- read_excel("data/Exports_Q3_2023.xlsx")
 
 # Create month dataframe 
